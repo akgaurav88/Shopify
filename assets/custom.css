@@ -1,0 +1,80 @@
+/* CSS for all changes on the home page: */
+
+/*------Style changes for Main Menu*/
+.header__active-menu-item {
+ text-decoration: none;
+   color: rgba(var(--color-foreground), 0.75);
+}
+
+.header__menu-item {
+ padding: 0;
+}
+
+.header__menu-item span {
+ transition: none;
+   text-decoration: none;
+}
+
+.header__menu-item:hover span {
+ text-decoration: none;
+}
+
+.header__menu-item:before {
+ content: '';
+   display: block;
+   position: absolute;
+   bottom: -2px;
+   left: 1.2rem;
+   right: 1.2rem;
+   height: 1px;
+   background: rgb(var(--color-foreground));
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.5s ease 0s;
+}
+
+.header__menu-item:hover:before {
+ transform-origin: left bottom;
+   transform: scaleX(1);
+   background: rgb(var(--color-foreground));
+}
+
+.list-menu--inline li {
+ position: relative;
+   padding: 0 1.2rem;
+}
+
+.header__menu-item.link {
+ font-size: 1.5rem;
+}
+
+/* Change color for Banner Subtext */
+.banner__content .color-background-1 {
+ color: rgb(var(--color-foreground));
+ }
+
+
+@media only screen and (min-width: 750px) {
+  /* Change Banner Main Text Font Size */
+  .h0 {
+   font-size: calc(var(--font-heading-scale) * 6.2rem);
+  }
+  
+  /* Change font size for Banner Subtext */
+  .banner__content .color-background-1 {
+    font-size: 2.2rem;
+   }
+  
+  /* Change Featured Products Section Heading Font Size */
+  h2{ 
+   font-size: calc(var(--font-heading-scale) * 3rem);
+  }
+  
+  /* Change Product Link Font Size */
+  .h5{ 
+   font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+}
+
+
+

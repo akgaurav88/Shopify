@@ -1,0 +1,13 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "terminal.integrated.tabs.enabled": true,
+    "editor.codeLens": false,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.suggest.showStatusBar": true,
+    "problems.showCurrentInStatus": true,
+    "zenMode.hideStatusBar": false,
+    "git.enabled": true
+    
+}
